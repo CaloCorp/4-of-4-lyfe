@@ -1,11 +1,64 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addAll= function(array){
+  // let theSum=0
+  // for(let i=0;i<array.length;i++){
 
+  //   theSum += array[i]
+  // }
+  // return theSum
+  let theSum=0
+  for(const item of array){
+    theSum += item 
+  }
+  return theSum
+}
+const countSpaces = function(str){
+  let count=0
+  for (const item of str){
+    count=str.split(' ').length-1
 
+  }
+  return count
+}
 
+const countTrues = function(array){
+  let count =0
+  for (const item of array){
+    if( item === true){
+      count ++
+    }
+  
+  }
+  return count
+}
 
+const makeFriendly= function(para){
+let newString=''
+  for (const character of para){
+newString+=character.replace('.','!')
+  }
+  return newString
+}
 
+const cubeAll= function(array){
+
+let cubed =[]
+for (const numbers of array){
+cubed.push(numbers **3)
+
+}
+return cubed
+}
+
+const addNoises= function(array){
+
+  let noisesmade=[]
+  for(const sounds of array){
+    noisesmade.push(sounds.append)
+  }
+}
 
 
 /*********************************
